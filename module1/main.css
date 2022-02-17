@@ -252,7 +252,7 @@ html, body {
     height: 709px;
     background: var(--violet);
     border-radius: 50px;  
-    margin-bottom: 320px;
+    margin-bottom: 150px;
 }
 .testimonials_box {
     margin-left: 7%;
@@ -386,11 +386,16 @@ html, body {
 }
 
 /* FOOTER */
+#footer {
+    border-top: rgba(156, 105, 226, 0.2) 2px solid; 
+    
+}
 .footer {
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
     width: 100%;
+    margin-top: 165px;
 }
 .footer__logo {
     display: flex;
@@ -442,7 +447,6 @@ html, body {
     margin-right: 15px;
     margin-top: 30px;
 }
-
 /*@MEDIA*/
 @media (min-width: 768px) and (max-width: 1199px) {
 .container {
@@ -617,7 +621,7 @@ html, body {
 }
 .testimonials {
     height: 500px;
-    margin-bottom: 150px;
+    margin-bottom: 70px;
 }
 .testimonials__title {
     font-size: 25px;
@@ -781,7 +785,7 @@ html, body {
 
 .testimonials {
     height: 400px;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
 }
 .testimonials__title {
     font-size: 20px;
@@ -820,6 +824,7 @@ html, body {
     flex-flow: column-reverse;
     width: 100%;
     align-items: center;
+    margin-top: 0;
 }
 .footer__info {
     margin-top: 20px;
