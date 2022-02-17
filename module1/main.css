@@ -39,14 +39,8 @@ html, body {
     align-items: center;
     justify-content: center;   
 }
-.nav__item {
+.nav a {
     margin-right: 40px;
-    list-style: none;
-}
-.nav__item:last-child {
-    margin-right: 0;
-}
-.nav__link {
     color: var(--grey);
     font-style: normal;
     font-weight: 500;
@@ -55,7 +49,10 @@ html, body {
     display: inline-block;
     text-decoration: none;
 }
-.nav__link--active {
+.nav a:last-child {
+    margin-right: 0;
+}
+.nav a:hover {
     color: var(--black);
     font-weight: 700;
 }
@@ -350,39 +347,39 @@ html, body {
 .info-testimonals__text--small {
     width: 100%;
 }
-.testimonals__nav {
+.pagination {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 90%;
     margin-left: 7%;
 }
-.testimonals__ellipse {
+.pagination__list {
     display: flex;
     align-items: center;
 }
-.ellipse-testimonals__item {
+.pagination__list a {
     background: url(./img/ellipse-unactive.png) no-repeat;
     width: 5px;
     height: 5px;    
     margin-right: 10px;  
 }
-.ellipse-testimonals__item--active {
+.pagination__list a.active {
     background: url(./img/ellipse-active.png) no-repeat;
     width: 10px;
     height: 10px;  
 }
-.testimonals__btn {
+.pagination__btn {
     display: flex;
     align-items: center;
 }
-.btn-testimonals__prev {
+.pagination__prev {
     background: url(./img/testimonials-prev.png) no-repeat;
     width: 45px;
     height: 15px;  
     margin-right: 20px
 }
-.btn-testimonals__next {
+.pagination__next {
     background: url(./img/testimonials-next.png) no-repeat;
     width: 25px;
     height: 15px;  
@@ -433,9 +430,6 @@ html, body {
     letter-spacing: 0.01em;
     color: var(--black);
     margin-top: 35px;
-}
-
-.media{
 }
 .media__title{
     font-style: normal;
