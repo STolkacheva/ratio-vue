@@ -92,6 +92,9 @@ html, body {
     color: var(--white);
     text-decoration: none;
 }
+.main__link:hover {
+    opacity: 0.5;
+}
 .main__bg {
     top: 100px;
     left: 33%;
@@ -234,6 +237,9 @@ html, body {
     background: url(./img/next.png) no-repeat;
     background-position: right;
 }
+.text-feature__link:hover {
+    opacity: 0.5;
+}
 
 /* TESTIMONIALS */
 .testimonials {
@@ -362,6 +368,9 @@ html, body {
     display: flex;
     align-items: center;
 }
+.pagination__btn a:hover{
+    opacity: 0.5;
+}
 .pagination__prev {
     background: url(./img/testimonials-prev.png) no-repeat;
     width: 45px;
@@ -435,6 +444,9 @@ html, body {
 .media__img {
     margin-right: 15px;
     margin-top: 30px;
+}
+.media a:hover{
+    opacity: 0.5;
 }
 /*@MEDIA*/
 @media (min-width: 768px) and (max-width: 1199px) {
