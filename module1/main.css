@@ -19,9 +19,6 @@ html, body {
 
 /*HEADER*/
 .header {
-    max-width: 1248px;
-    width: 100%;
-    margin: 0 auto;
     display: flex;
     margin-bottom: 145px;
     margin-top: 70px;
@@ -63,7 +60,7 @@ html, body {
     min-height: 650px;
     position: relative;
 }
-.info__title {
+.main__title {
     font-style: normal;
     font-weight: bold;
     font-size: 80px;
@@ -71,7 +68,7 @@ html, body {
     margin-bottom: 50px;
     width: 60%;
 }
-.info__discription {
+.main__discription {
     width: 30%;
     font-weight: 500;
     color: var(--grey);
@@ -80,14 +77,13 @@ html, body {
     line-height: 160%;
     margin-bottom: 50px;
 }
-.info__link {
+.main__link {
     width: 170px;
     height: 60px;
     background: var(--violet);
     border-radius: 50px;
     display: flex;
     align-items: center;    
-    
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -106,7 +102,6 @@ html, body {
 
 /* ABOUT */
 .about {
-    max-width: 1200px;
     width: 100%;
     height: 560px;
     background: rgba(240, 99, 184, 0.15);
@@ -121,10 +116,11 @@ html, body {
     object-fit: contain;
 }
 .about__info {
-    align-self: center;
+    align-self: center; 
+    margin-right: 95px;
 }
 .about__title { 
-    width: 90%;
+    /* width: 90%; */
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
@@ -134,7 +130,7 @@ html, body {
 }
 
 .about__discription{
-    width: 85%;
+    /* width: 85%; */
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -144,15 +140,8 @@ html, body {
 
 /* FEATURE */
 .feature {
-    max-width: 1200px;
     width: 100%;
     margin-bottom: 150px;
-}
-.feature__info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 100px;
 }
 .feature__title {
     font-style: normal;
@@ -170,6 +159,7 @@ html, body {
     line-height: 160%;
     color: var(--grey);
     text-align: center;
+    margin-bottom: 100px;
 }
 .feature__list {
     height: 800px;
@@ -247,7 +237,6 @@ html, body {
 
 /* TESTIMONIALS */
 .testimonials {
-    max-width: 1200px;
     width: 100%;
     height: 709px;
     background: var(--violet);
@@ -460,10 +449,10 @@ html, body {
 .main {
     min-height: 500px;
 }
-.info__title {
+.main__title {
     font-size: 50px;
 }
-.info__discription {
+.main__discription {
     width: 40%;
     font-size: 14px;
 }
@@ -549,19 +538,19 @@ html, body {
 .main__bg {
     top: 60px;
 }
-.info__title {
+.main__title {
     font-size: 30px;
     margin-bottom: 30px;
     width: 100%;
 }
-.info__discription {
+.main__discription {
     width: 50%;
     font-weight: 300;
     font-size: 12px;
     line-height: 140%;
     margin-bottom: 20px;
 }
-.info__link {
+.main__link {
     width: 90px;
     height: 40px;
     font-weight: 500;
@@ -600,11 +589,6 @@ html, body {
 }
 .feature__discription {
     font-size: 14px;
-}
-.feature__info {
-    width: 100%;
-    justify-content: center;
-    margin-bottom: 50px;
 }
 .feature__list {
     height: 500px;
@@ -705,19 +689,19 @@ html, body {
 .main__bg {
     top: 60px;
 }
-.info__title {
+.main__title {
     font-size: 20px;
     margin-bottom: 15px;
     width: 100%;
 }
-.info__discription {
+.main__discription {
     width: 70%;
     font-weight: 300;
     font-size: 10px;
     line-height: 140%;
     margin-bottom: 15px;
 }
-.info__link {
+.main__link {
     width: 90px;
     height: 40px;
     font-weight: 500;
@@ -739,11 +723,6 @@ html, body {
     font-size: 10px;
 }
 .feature {
-    margin-bottom: 30px;
-}
-.feature__info {
-    width: 100%;
-    justify-content: center;
     margin-bottom: 30px;
 }
 .feature__title {
