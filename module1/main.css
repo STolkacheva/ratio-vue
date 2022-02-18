@@ -448,9 +448,10 @@ html, body {
 .media a:hover{
     opacity: 0.5;
 }
+
 /*@MEDIA*/
 @media (min-width: 768px) and (max-width: 1199px) {
-.container {
+ .container {
     margin: 0 5%;
     width: 90%;
 }
@@ -458,27 +459,40 @@ html, body {
     margin-bottom: 100px;
     margin-top: 40px;
 }
-.main {
-    min-height: 500px;
-}
 .main__title {
-    font-size: 50px;
+    font-size: 50px; 
+    width: 75%;
 }
 .main__discription {
     width: 40%;
-    font-size: 14px;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+.main {
+    min-height: 500px;
+    margin-bottom: 50px;
 }
 .about {
     margin-bottom: 100px;
+    height: 450px;
+}
+.about__bg {
+    margin-right: 0;
+}
+.about__info {
+    margin-right: 20px;
+}
+.about__title {
+    font-size: 30px;
 }
 .about__discription {
     font-size: 16px;
 }
-.about__bg {
-    margin-right: 25px;
-}
 .feature {
     margin-bottom: 100px;
+}
+.feature__list {
+    height: 650px;
 }
 .feature__img {
     left: -25%;
@@ -489,9 +503,6 @@ html, body {
     margin-left: 20%;
     justify-content: center;
     height: 100%;
-}
-.feature__list {
-    height: 650px;
 }
 .text-feature__title {
     font-size: 18px;
@@ -505,6 +516,8 @@ html, body {
 .testimonals__avatar {
     width: 70px;
     height: 70px;
+    margin-top: 50px;
+    margin-left: 50px;
 }
 .testimonals__info {
     margin-top: 60px;
@@ -525,6 +538,7 @@ html, body {
     margin-right: 20px;
 }
 }
+
 @media (min-width: 576px) and (max-width: 767.99px) {
 .container {
     margin: 0 5%;
@@ -532,7 +546,7 @@ html, body {
 }
 .header{
     margin-bottom: 50px;
-    margin-top: 0;
+    margin-top: 20px; 
 }
 .logo {
     margin: 0;
@@ -546,6 +560,7 @@ html, body {
 }
 .main {
     min-height: 350px;
+    margin-bottom: 30px;
 }
 .main__bg {
     top: 60px;
@@ -556,9 +571,9 @@ html, body {
     width: 100%;
 }
 .main__discription {
-    width: 50%;
+    width: 35%;
     font-weight: 300;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 140%;
     margin-bottom: 20px;
 }
@@ -569,12 +584,11 @@ html, body {
     font-size: 14px;
 }
 .about {
-    height: 400px;
+    height: 300px;
     margin-bottom: 50px;
 }
 .about__bg {
-    margin-right: 30px;
-    width: 35%;
+    width: 0;
 }
 .about__title {
     font-size: 25px;
@@ -585,35 +599,37 @@ html, body {
 .feature {
     margin-bottom: 50px;
 }
-.feature__img {
-    left: -17%;
-    width: 35%;
-}
-.feature__text {
-    width: 60%;
-    margin-left: 23%;
-    justify-content: center;
-    height: 100%;
-}
 .feature__title {
     font-size: 25px;
     margin-bottom: 0;
 }
 .feature__discription {
     font-size: 14px;
+    margin-bottom: 50px;
 }
 .feature__list {
-    height: 500px;
-    margin-left: 8%;
+    height: 1400px;
+    flex-flow: column;
+    align-items: center;
+}
+.feature__item {
+    width: 100%;
+    height: 45%;
+    margin-bottom: 20px;
+    background-position: center;
+}
+.feature__img {
+    width: 35%;
+    left: 0;
+}
+.feature__text {
+    width: 40%;
+    justify-content: center;
+    height: 100%;
+    margin-left: 37%;
 }
 .text-feature__title {
-    font-size: 14px;
-    margin: 0;
-}
-.text-feature__discription {
-    width: 100%;
-    font-size: 10px;
-    margin: 5px 0;
+    margin: 0; 
 }
 .testimonials {
     height: 500px;
@@ -621,36 +637,37 @@ html, body {
 }
 .testimonials__title {
     font-size: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     margin-top: 50px;
 }
+.testimonals__list {
+    margin-bottom: 40px;
+}
 .testimonals__item {
-    height: 250px;
+    height: 300px;
 }
 .testimonals__avatar {
-    width: 50px;
-    height: 50px;
-    margin-top: 30px;
-    margin-left: 40px;
-    margin-right: 10px;
+    margin: 0;
+    width: 0;
+    height: 0;
+    visibility: hidden;
 }
 .testimonals__info {
-    margin-top: 35px;
-}
-.info-testimonals__name { 
-    font-size: 14px;
-}
-.info-testimonals__job {    
-    font-size: 10px;
+    margin-top: 35px; 
+    margin-left: 20px;
 }
 .info-testimonals__text {    
     width: 90%;
-    height: 130px;
-    font-size: 12px;
+    font-size: 16px;
 }
-.testimonals__avatar--small {
-    margin-left: 20px;
-    margin-right: 10px;
+.footer {
+    flex-flow: column-reverse;
+    width: 100%;
+    align-items: center;
+    margin-top: 70px;
+}
+.footer__info {
+    margin-top: 20px;
 }
 .footer__logo {
     width: 0;
@@ -658,20 +675,18 @@ html, body {
     visibility: hidden;
 }
 .footer__address {
-    font-size: 14px;
-    margin-top: 0;
-}
-.footer__contact {
-    font-size: 14px;
+    margin-top: 0; 
 }
 .footer__copyright {
-    font-size: 10px;
-    margin-top: 0; 
+    margin-top: 0;  
 }
 .media__title {
     width: 0;
     height: 0;
     visibility: hidden;
+}
+.media__img {
+    margin-top: 0;
 }
 }
 
@@ -700,6 +715,7 @@ html, body {
 }
 .main__bg {
     top: 60px;
+    opacity: 0.4;
 }
 .main__title {
     font-size: 20px;
@@ -707,9 +723,9 @@ html, body {
     width: 100%;
 }
 .main__discription {
-    width: 70%;
+    width: 80%;
     font-weight: 300;
-    font-size: 10px;
+    font-size: 14px;
     line-height: 140%;
     margin-bottom: 15px;
 }
@@ -720,60 +736,65 @@ html, body {
     font-size: 14px;
 }
 .about {
-    height: 270px;
+    height: 300px;
     margin-bottom: 30px;
+}
+.about__info{
+    margin-right: 20px;
 }
 .about__bg {
     margin-right: 10px;
     width: 0;
 }
 .about__title {
-    font-size: 15px;
+    font-size: 16px;
     margin-bottom: 5px;
 }
 .about__discription {
-    font-size: 10px;
+    font-size: 14px;
 }
 .feature {
     margin-bottom: 30px;
 }
 .feature__title {
-    font-size: 15px;
+    font-size: 20px;
     margin-bottom: 0;
 }
 .feature__discription {
-    font-size: 10px;
+    font-size: 14px;
+    margin-bottom: 30px;
 }
 .feature__list {
-    height: 1000px;
+    height: 1400px;
     flex-flow: column;
     align-items: center;
+}
+.feature__img {
+    width: 0;
+    left: 0;
 }
 .feature__item {
     width: 100%;
     height: 45%;
-    margin-bottom: 5px;
-    background-position: center;
-}
-.feature__img {
-    width: 35%;
-    left: 0;
+    margin-bottom: 10px;
+    background-position: center; 
+    background-size: auto;
 }
 .feature__text {
-    width: 40%;
-    justify-content: center;
+    width: 80%;
+    justify-content: space-evenly;
     height: 100%;
+    margin-left: 15%;
 }
 .text-feature__title {
-    font-size: 14px;
+    font-size: 18px;
     margin: 0;
 }
 .text-feature__discription {
     width: 100%;
-    font-size: 10px;
+    font-size: 14px;
     margin: 10px 0;
 }
-
 .testimonials {
     height: 400px;
     margin-bottom: 30px;
@@ -807,8 +828,7 @@ html, body {
     font-size: 10px;
 }
 .info-testimonals__text {    
-    width: 90%;
-    height: 130px;
+    width: 95%;
     font-size: 12px;
 }
 .footer {
