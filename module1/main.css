@@ -768,6 +768,7 @@ html, body {
     height: 1400px;
     flex-flow: column;
     align-items: center;
+    margin-left: 0;
 }
 .feature__img {
     width: 0;
@@ -781,10 +782,10 @@ html, body {
     background-size: auto;
 }
 .feature__text {
-    width: 80%;
+    width: 70%;
     justify-content: space-evenly;
     height: 100%;
-    margin-left: 15%;
+    margin-left: 20%;
 }
 .text-feature__title {
     font-size: 18px;
