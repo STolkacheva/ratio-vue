@@ -796,7 +796,7 @@ html, body {
     margin: 10px 0;
 }
 .testimonials {
-    height: 400px;
+    height: 500px;
     margin-bottom: 30px;
 }
 .testimonials__title {
@@ -808,7 +808,7 @@ html, body {
     margin-bottom: 20px;
 }
 .testimonals__item {
-    height: 250px;
+    height: 350px;
     margin-bottom: 20px;
 }
 .testimonals__avatar {
@@ -822,14 +822,14 @@ html, body {
     margin-left: 10px;
 }
 .info-testimonals__name { 
-    font-size: 14px;
+    font-size: 16px;
 }
 .info-testimonals__job {    
-    font-size: 10px;
+    font-size: 12px;
 }
 .info-testimonals__text {    
     width: 95%;
-    font-size: 12px;
+    font-size: 14px;
 }
 .footer {
     flex-flow: column-reverse;
