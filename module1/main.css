@@ -4,7 +4,9 @@
     --white: #FFFFFF;
     --violet: #9C69E2;
 }
-
+/*Не подключен normalize*/
+/* то что задано на html будет унаследовано body, есть стили (Наследование в CSS) */
+/* нет мин ширины страницы */
 html, body {
     height: 100%;
     font-family: "Ubuntu", "Roboto", sans-serif;
@@ -24,17 +26,18 @@ html, body {
     margin-top: 70px;
     align-items: center;
 }
+/* после классов принято делать отступы */
 .logo {
     margin-right: 120px;
 }
-.logo__item { 
+.logo__item {
     width: 50px;
     height: 40px;
 }
 .nav {
     display: flex;
     align-items: center;
-    justify-content: center;   
+    justify-content: center;
 }
 .nav a {
     margin-right: 40px;
@@ -83,11 +86,11 @@ html, body {
     background: var(--violet);
     border-radius: 50px;
     display: flex;
-    align-items: center;    
+    align-items: center;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    line-height: 160%; 
+    line-height: 160%;
     justify-content: center;
     color: var(--white);
     text-decoration: none;
@@ -99,7 +102,7 @@ html, body {
     top: 100px;
     left: 33%;
     position: absolute;
-    z-index: -1;    
+    z-index: -1;
     width: 75%;
 }
 
@@ -108,7 +111,7 @@ html, body {
     width: 100%;
     height: 560px;
     background: rgba(240, 99, 184, 0.15);
-    border-radius: 50px;    
+    border-radius: 50px;
     margin-bottom: 150px;
     display: flex;
 }
@@ -119,16 +122,16 @@ html, body {
     object-fit: contain;
 }
 .about__info {
-    align-self: center; 
+    align-self: center;
     margin-right: 95px;
 }
-.about__title { 
+.about__title {
     /* width: 90%; */
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
     line-height: 130%;
-    color: var(--black);    
+    color: var(--black);
     margin-bottom: 40px;
 }
 
@@ -137,7 +140,7 @@ html, body {
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    line-height: 160%; 
+    line-height: 160%;
     color: var(--grey);
 }
 
@@ -151,7 +154,7 @@ html, body {
     font-weight: bold;
     font-size: 40px;
     line-height: 130%;
-    color: var(--black);   
+    color: var(--black);
     margin-bottom: 50px;
     text-align: center;
 }
@@ -175,7 +178,7 @@ html, body {
     width: 45%;
     height: 45%;
     list-style: none;
-    position: relative; 
+    position: relative;
 }
 .feature__item--searchdata {
     background: url(./img/bg-1.png) no-repeat;
@@ -205,7 +208,7 @@ html, body {
     flex-flow: column;
     margin-left: 35%;
 }
-.text-feature__title {    
+.text-feature__title {
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -220,17 +223,17 @@ html, body {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 160%;  
+    line-height: 160%;
     color: var(--grey);
     margin: 20px 0;
 }
-.text-feature__link {    
+.text-feature__link {
     width: 130px;
-    height: 26px;    
+    height: 26px;
     font-style: normal;
-    font-weight: 800; 
+    font-weight: 800;
     font-size: 16px;
-    line-height: 160%;    
+    line-height: 160%;
     letter-spacing: 0.005em;
     color: var(--black);
     text-decoration: none;
@@ -246,7 +249,7 @@ html, body {
     width: 100%;
     height: 709px;
     background: var(--violet);
-    border-radius: 50px;  
+    border-radius: 50px;
     margin-bottom: 150px;
 }
 .testimonials_box {
@@ -287,14 +290,16 @@ html, body {
     box-shadow: 0px 20px 0px rgba(0, 0, 0, 0.1);
 }
 .testimonals__item:last-child {
+    /* если 0, то без px */
     margin-right: 0px;
 }
 .testimonals__item--fadeout::before {
     content: "";
     width: 100%;
-    height: 100%;  
+    height: 100%;
     display: block;
     border-radius: 20px;
+    /* есть же переменные для цвета?! */
     background: linear-gradient(270deg, #FFFFFF 9.75%, rgba(255, 255, 255, 0) 100%);
     position: absolute;
 }
@@ -311,18 +316,18 @@ html, body {
 .testimonals__info {
     margin-top: 80px;
 }
-.info-testimonals__name {    
+.info-testimonals__name {
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    line-height: 160%; 
+    line-height: 160%;
     letter-spacing: 0.005em;
     color: var(--black);
     margin: 0;
 }
-.info-testimonals__job {    
+.info-testimonals__job {
     font-size: 14px;
-    line-height: 160%; 
+    line-height: 160%;
     font-style: normal;
     font-weight: 500;
     letter-spacing: 0.01em;
@@ -330,11 +335,11 @@ html, body {
     margin-top: 0;
     margin-bottom: 20px
 }
-.info-testimonals__text {    
+.info-testimonals__text {
     width: 90%;
     height: 130px;
     font-size: 18px;
-    line-height: 180%; 
+    line-height: 180%;
     font-style: normal;
     font-weight: 400;
     color:var(--grey)
@@ -356,13 +361,13 @@ html, body {
 .pagination__list a {
     background: url(./img/ellipse-unactive.png) no-repeat;
     width: 5px;
-    height: 5px;    
-    margin-right: 10px;  
+    height: 5px;
+    margin-right: 10px;
 }
 .pagination__list a.active {
     background: url(./img/ellipse-active.png) no-repeat;
     width: 10px;
-    height: 10px;  
+    height: 10px;
 }
 .pagination__btn {
     display: flex;
@@ -374,19 +379,20 @@ html, body {
 .pagination__prev {
     background: url(./img/testimonials-prev.png) no-repeat;
     width: 45px;
-    height: 15px;  
+    height: 15px;
     margin-right: 20px
 }
 .pagination__next {
     background: url(./img/testimonials-next.png) no-repeat;
     width: 25px;
-    height: 15px;  
+    height: 15px;
 }
 
 /* FOOTER */
+/* стиль по id, тут не уместен, надо задавать класс */
 #footer {
-    border-top: rgba(156, 105, 226, 0.2) 2px solid; 
-    
+    border-top: rgba(156, 105, 226, 0.2) 2px solid;
+
 }
 .footer {
     display: flex;
@@ -403,7 +409,7 @@ html, body {
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: 160%; 
+    line-height: 160%;
     color: var(--black);
     margin-left: 20px;
 }
@@ -411,7 +417,7 @@ html, body {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 180%; 
+    line-height: 180%;
     letter-spacing: 0.01em;
     color: var(--black);
     margin-top: 60px;
@@ -420,7 +426,7 @@ html, body {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 180%; 
+    line-height: 180%;
     letter-spacing: 0.01em;
     color: var(--black);
     margin-top: 10px;
@@ -429,7 +435,7 @@ html, body {
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 180%; 
+    line-height: 180%;
     letter-spacing: 0.01em;
     color: var(--black);
     margin-top: 35px;
@@ -438,7 +444,7 @@ html, body {
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 160%; 
+    line-height: 160%;
     color: var(--black)
 }
 .media__img {
@@ -460,7 +466,7 @@ html, body {
     margin-top: 40px;
 }
 .main__title {
-    font-size: 50px; 
+    font-size: 50px;
     width: 75%;
 }
 .main__discription {
@@ -522,13 +528,13 @@ html, body {
 .testimonals__info {
     margin-top: 60px;
 }
-.info-testimonals__name { 
+.info-testimonals__name {
     font-size: 16px;
 }
-.info-testimonals__job {    
+.info-testimonals__job {
     font-size: 12px;
 }
-.info-testimonals__text {    
+.info-testimonals__text {
     width: 90%;
     height: 130px;
     font-size: 14px;
@@ -538,7 +544,7 @@ html, body {
     margin-right: 20px;
 }
 }
-
+/* Значения с плавающей точкой в пикселях могут отображаться по-разному в разных браузерах */
 @media (min-width: 576px) and (max-width: 767.99px) {
 .container {
     margin: 0 5%;
@@ -546,9 +552,10 @@ html, body {
 }
 .header{
     margin-bottom: 50px;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 .logo {
+    /* можно через сокращенную запись margin */
     margin: 0;
     display: none;
     margin-bottom: 50px;
@@ -627,7 +634,7 @@ html, body {
     margin-left: 37%;
 }
 .text-feature__title {
-    margin: 0; 
+    margin: 0;
 }
 .testimonials {
     height: 500px;
@@ -649,10 +656,10 @@ html, body {
     display: none;
 }
 .testimonals__info {
-    margin-top: 35px; 
+    margin-top: 35px;
     margin-left: 20px;
 }
-.info-testimonals__text {    
+.info-testimonals__text {
     width: 90%;
     font-size: 16px;
 }
@@ -669,10 +676,10 @@ html, body {
     display: none;
 }
 .footer__address {
-    margin-top: 0; 
+    margin-top: 0;
 }
 .footer__copyright {
-    margin-top: 0;  
+    margin-top: 0;
 }
 .media__title {
     display: none;
@@ -688,7 +695,7 @@ html, body {
     width: 90%;
 }
 .header{
-    margin-bottom: 50px;   
+    margin-bottom: 50px;
     margin-top: 0;
 }
 .logo {
@@ -768,7 +775,7 @@ html, body {
     width: 100%;
     height: 45%;
     margin-bottom: 10px;
-    background-position: center; 
+    background-position: center;
     background-size: auto;
 }
 .feature__text {
@@ -807,16 +814,16 @@ html, body {
     display: none;
 }
 .testimonals__info {
-    margin-top: 20px; 
+    margin-top: 20px;
     margin-left: 10px;
 }
-.info-testimonals__name { 
+.info-testimonals__name {
     font-size: 16px;
 }
-.info-testimonals__job {    
+.info-testimonals__job {
     font-size: 12px;
 }
-.info-testimonals__text {    
+.info-testimonals__text {
     width: 95%;
     font-size: 14px;
 }
@@ -841,7 +848,7 @@ html, body {
 }
 .footer__copyright {
     font-size: 10px;
-    margin-top: 0; 
+    margin-top: 0;
 }
 .media__title {
     display: none;
