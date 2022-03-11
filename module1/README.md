@@ -1,3 +1,7 @@
+## ДЕМО 
+https://stolkacheva.github.io/ratio-vue/module1/
+
+
 ## Разработка landing-page
 
 Дизайн - [https://www.figma.com/file/VsA7lowyHmr0WUZAQ9X3n8/Ratio-courses?node-id=0%3A1](https://www.figma.com/file/VsA7lowyHmr0WUZAQ9X3n8/Ratio-courses?node-id=0%3A1)
